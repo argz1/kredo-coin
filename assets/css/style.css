@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navigation */
+header{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1em;
+    background: #f6f6f6;
+}
+
+.logo span{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.coin{
+    color: goldenrod;
+
+}
+
+
+.nav-search{
+    background: white;
+    display: flex;
+    width: 400px;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.nav-search input{
+    flex:1;
+    padding: .5em 1.2em;
+    border: 50px;
+    outline:none;
+}
+
+.nav-search span{
+    position: absolute;
+    right: 15px;
+    top:5px;
+    cursor: pointer;
+    background: white;
+    padding-left:5px;
+}
+
+.nav-user{
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+
+.nav-user p{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.nav-user select,
+option{
+    border: none;
+    background: transparent;
+    text-align: right;
+    outline: none;
+}
+
+.nav-user .dp-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.nav-user .dp-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-mobile-icon{
+    display:none;
+}
+
+/* main content */
+
+main{
+    width: 100%;
+    display:flex;
+}
+
+
+/* main content - left side */
+#section-1-mobile{
+    display:none;
+}
+#section-1{
+    background: #e4e5eb;
+    padding: 2em;
+    border-right: 1px solid #c7c6c6;
+    transition: .5s ease;
+    width: auto;
+}
+
+#section-1 span{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+#section-1 ul{
+    list-style: none;
+}
+#section-1 ul li{
+    margin-bottom:5px;
+    padding-left:10px;
+}
+
+#section-1 ul li a{
+    text-decoration: none;
+    color:#555;
+    transition: 0.2s ease-in;
+    padding:1em;
+    display: inline-block;
+    border-radius: 10px;
+    width: 200px;
+    
+}
+
+
+#section-1 ul li a:hover{
+    background: goldenrod;
+    color: white;
+}
+
+
+
+
+/* main content - right side */
+
+#section-2{
+    background: #e4e5eb;
+    flex:1;
+    padding:2em;
+}
+
+.data-monitoring{
+    /* background: #eaeaea; */
+    width: 100%;
+    height: auto;
+    
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.dm-box{
+    background:#f6f6f6;
+    color:#555;
+    margin:.75em 1.2em;
+    /* height: 375px; */
+    border-radius:20px;
+    padding: 1.5em;
+}
+
+/* main content - right side (top left box) */
+
+.dm-box-1{
+    grid-column:1/9;
+}
+
+.earnings-report-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.earnings-report-header p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.earnings-report-header select{
+   padding:.75em;
+   width: 200px;
+   outline: none;
+   border: none;
+   border-radius: 10px;
+   border-right: 16px solid transparent;
+}
+
+.earnings-report-content{
+    display:flex;
+}
+
+.earnings-report-content-details{
+    flex:1;
+    padding:1em 0;
+   
+}
+
+.earnings-report-content-details h2{
+    font-size: 40px;
+    font-weight: 600;
+    color:goldenrod;
+}
+.earnings-report-content-details p{
+    font-size: 13px;
+    margin-top:30px;
+}
+
+.earnings-report-content-details span{
+    font-size: 14px;
+}
+
+
+.earnings-report-content-bar-graph{
+    flex:2;
+    display: flex;
+    padding:1.5em;
+    flex-direction: column;
+    
+}
+
+.earnings-report-content-bar-graph p{
+    font-size: 11px;
+    padding: 1em 0;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.bar-graph{
+    width: 100%;
+    height: 220px;
+    margin:auto;
+    background: goldenrod;
+    color:white;
+    border-radius: 10px;
+    padding:1em;
+    display:flex;
+    box-shadow: 1px 1px 5px #555;
+}
+
+.bar-graph ul {
+    list-style: none;
+    /* text-align: right; */
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid #eaeaea;
+   
+}
+
+
+.bar-graph-report{
+    flex:3;
+    display:flex;
+    justify-content:space-around;
+}
+
+.bar-graph-report > div{
+    width:30%
+}
+
+.bar-graph-report > div:nth-child(1){
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.bar-graph-report > div:nth-child(1) > div{
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+  
+}
+
+.bar-graph-report > div:nth-child(1) > div > div:nth-child(1){
+    background: white;
+    width: 20px;
+    height: 130px;
+    animation: bar1 5s ease infinite;
+}
+@keyframes bar1 {
+    from{
+        height: 0;
+    }
+    to{
+        height: 130px;
+    }
+}
+
+
+.bar-graph-report > div:nth-child(1) > div > div:nth-child(2){
+    background: white;
+    width: 20px;
+    height: 70px;
+    animation: bar2 5s ease infinite;
+    
+}
+@keyframes bar2 {
+    from{
+        height: 0;
+    }
+    to{
+        height: 70px;
+    }
+}
+
+
+.bar-graph-report > div:nth-child(2){
+     display:flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     text-align: center;
+}
+
+.bar-graph-report > div:nth-child(2) > div{
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+
+.bar-graph-report > div:nth-child(2) > div > div:nth-child(1){
+    background: white;
+    width: 20px;
+    height: 150px;
+    animation: bar3 5s ease infinite;
+}
+
+@keyframes bar3 {
+    from{
+        height: 0;
+    }
+    to{
+        height: 150px;
+    }
+}
+
+.bar-graph-report > div:nth-child(2) > div > div:nth-child(2){
+    background: white;
+    width: 20px;
+    height: 120px;
+    animation: bar4 5s ease infinite;
+}
+
+@keyframes bar4 {
+    from{
+        height: 0;
+    }
+    to{
+        height: 120px;
+    }
+}
+
+
+.bar-graph-report > div:nth-child(3){
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.bar-graph-report > div:nth-child(3) > div{
+   display:flex;
+   align-items: flex-end;
+   justify-content: space-evenly;
+}
+
+.bar-graph-report > div:nth-child(3) > div > div:nth-child(1){
+    background: white;
+    width: 20px;
+    height: 90px;
+    animation: bar5 5s ease infinite;
+}
+@keyframes bar5 {
+    from{
+        height: 0;
+    }
+    to{
+        height: 90px;
+    }
+}
+
+
+.bar-graph-report > div:nth-child(3) > div >  div:nth-child(2){
+    background: white;
+    width: 20px;
+    height: 155px;
+    animation: bar6 5s ease infinite;
+}
+@keyframes bar6 {
+    from{
+        height: 0;
+    }
+    to{
+        height: 155px;
+    }
+}
+
+
+.month{
+    font-size: 12px;
+}
+
+/* main content - right side (top right box) */
+
+.dm-box-2{
+    grid-column: 9/13;
+    text-align: center;
+}
+
+.dm-box-2 i{
+    color:#85bb65;
+    margin-bottom:10px;
+}
+
+.dm-box-2 h2,
+.dm-box-2 p{
+    font-size: 13px;
+}
+
+.dm-box-2 > div > div:nth-child(2) > a{
+    display: inline-block;
+    width: 80%;
+    padding: 1em;
+    color: white;
+    margin:10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.dm-box-2 > div > div:nth-child(2) > a:nth-of-type(1){
+    background: goldenrod;
+    transition: 0.5s ease;
+}
+.dm-box-2 > div > div:nth-child(2) > a:nth-of-type(2){
+    background: #555;
+    transition: 0.5s ease;
+}
+
+.dm-box-2 > div > div:nth-child(2) > a:nth-of-type(1):hover{
+    transform:translateX(10px);
+}
+.dm-box-2 > div > div:nth-child(2) > a:nth-of-type(2):hover{
+    background: #555;
+    transform:translateX(10px);
+}
+
+
+/* main content - right side (bottom left box) */
+
+.dm-box-3{
+    grid-column:1/9;
+    display: flex;
+    flex-direction: column;
+}
+
+.dm-box-3 h2{
+   font-weight: 500;
+   font-size: 18px;
+   margin-bottom:20px;
+}
+
+.dm-box-3 > div{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dm-box-3 > div > div{
+    flex: 1 1 120px;
+    background: white;
+    padding: .5em;
+    border-radius: 10px;
+    color:#555;
+    margin: 0 5px 5px 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    
+}
+
+.dm-box-3 > div > div:hover{
+    background: #faf7dd;
+}
+
+.dm-box-3 > div > div > span{
+    font-weight: 500;
+    font-size: 17px;
+    color: goldenrod;
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* border-bottom:1px solid white; */
+}
+
+.dm-box-3 > div > div > span img{
+    padding-right:10px;
+}
+
+.dm-box-3 > div > div > span:nth-child(2){
+    font-weight: 500;
+    font-size: 10px;
+    padding:0 5px;
+    display: inline-block;
+    padding:.5em;
+}
+
+.dm-box-3 > div > div small{
+    font-style: italic;
+    font-size: 11px;
+}
+
+.dm-box-3 table{
+    font-size: 14px;
+    /* background: wheat; */
+    width: 98%;
+}
+
+
+
+table,td,th{
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    border-collapse: collapse;
+}
+table{
+    margin-top:20px;
+}
+thead{
+    background: #484848;
+    color:white;
+}
+
+
+td,th{
+    padding:.75em 0;
+    text-align: center;
+}
+
+th{
+    padding:.75em;
+}
+
+tr:hover{
+    background: #f0f0f0;
+    cursor: pointer;
+}
+table img{
+    width: 20px;
+}
+
+table tr td:nth-child(2) span{
+    display: flex;
+    align-items: center;
+}
+table tr td:nth-child(2) span img{
+    padding-right: 5px;
+}
+
+
+.dm-box-3 table thead tr
+.dm-box-3 table tbody tr{
+    border-top:1px solid #555;
+}
+
+
+
+/* main content - right side (bottom right box) */
+
+.dm-box-4{
+    grid-column: 9/13;
+    overflow: auto;
+    height: 400px;
+    /* padding: 1em; */
+}
+
+.dm-box-4 h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dm-box-4 div{
+    font-size: 11px;
+    padding: 1em;
+    background: #eaeaea;
+    border-radius: 10px;
+    margin-bottom:10px;
+    transition: 0.5s ease;
+}
+
+.dm-box-4 div:hover{
+    cursor: pointer;
+    background: #faf7dd;
+    transform: translateX(10px);
+}
+
+
+/* media query */
+
+@media(max-width:1230px){
+    .dm-box-3 table{
+        font-size: .5em;
+    }
+
+    .dm-box-3 > div > div > span{
+        font-size: 17px;
+    }
+
+    #section-1{
+        width: 220px;
+    }
+}
+
+@media (max-width:1070px){
+    #section-1{
+        display:none;
+    }
+
+    main{
+        flex-direction:column;
+    }
+
+    #section-1-mobile{
+        display:flex;
+    }
+
+    #section-1-mobile > div{
+        padding:1em;
+        background: #eaeaea;
+        flex:1;
+        text-align: center;
+    }
+
+    #section-1-mobile > div:hover{
+        background: goldenrod;
+        color:white;
+        cursor:pointer;
+    }
+
+    #section-1-mobile > div > span {
+        font-weight: 500;
+    }
+}
+
+@media(max-width:900px){
+
+    .dm-box-3 > div > div > span{
+        font-size: 17px;
+    }
+
+@media(max-width:800px){
+    #section-2{
+        padding:.5em;
+    }
+
+    .dm-box-1{
+        text-align:center;
+    }
+
+    .data-monitoring{
+        display:block;
+    }
+
+    .dm-box-3 table{
+        font-size: 13px;
+    }
+
+    .dm-box-3 > div > div > span{
+        font-size: 17px;
+    }
+    
+    .earnings-report-header{
+        display:block;
+    }
+
+    .earnings-report-header select{
+        width: 100%;
+        margin-top:10px;
+    }
+
+    .earnings-report-content{
+        display:block;
+    }
+
+    .earnings-report-content-bar-graph{
+        padding:0;
+    }
+
+    .nav-search,
+    .nav-user{
+        display:none;
+    }
+
+    nav{
+        justify-content: space-between;
+        padding: 1em 3.5em;
+    }
+
+    .nav-mobile-icon{
+        display: block;
+        cursor: pointer;    
+    }
+    .nav-mobile-icon span{
+        font-size: 30px;
+    }
+
+    /* .dm-box-3 table{
+        font-size: .5em;
+    }
+
+    .dm-box-3 > div > div > span{
+        font-size: .7em;
+    } */
+}
+
+@media(max-width:630px){
+    .dm-box-3 table{
+        font-size: 10px;
+    }
+
+    .dm-box-3 > div > div > span{
+        font-size: 17px;
+    }
+}
+
+@media(max-width:500px){
+
+   
+
+    .dm-box-3 table{
+        font-size: 8px;
+    }
+
+    .dm-box-3 > div > div > span{
+        font-size: 17px;
+    }
+}
+ 
+}
+
+
+
+
